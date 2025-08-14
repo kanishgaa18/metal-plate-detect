@@ -5,6 +5,7 @@ import numpy as np
 pixels_per_cm = 37  # Example: 37 pixels = 1 cm (change this to your actual scale)
 
 # Load image
+#img = cv2.imread("Figure_1.png")
 img = cv2.imread("part2.png")
 if img is None:
     print("Error: Image not found.")
