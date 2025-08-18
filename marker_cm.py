@@ -87,7 +87,6 @@ if hole is not None:
 else:
     print("No circles found.")
 
-# --- 3. Quality Control Setup ---
 # Define the true dimensions of the object in centimeters
 true_length = 15.0
 true_breadth = 15.0
