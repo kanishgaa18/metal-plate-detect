@@ -5,7 +5,7 @@ import numpy as np
 pixels_per_cm = 40  
 # Load image
 img = cv2.imread("rect.jpg")
- 
+       
 if img is None:
     print("Error: Image not found.")
     exit()

@@ -5,7 +5,7 @@ import numpy as np
 # Define the dictionary and the known size of your Aruco marker in cm
 aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_6X6_250)
 aruco_params = cv2.aruco.DetectorParameters()
-marker_size_cm = 5.1 
+marker_size_cm = 5.4
 
 # Define the true dimensions of the object in centimeters for quality check
 true_length_cm = 15.0
@@ -89,7 +89,7 @@ while True:
 
         # Hole Detection
         blur = cv2.GaussianBlur(gray, (9, 9), 2)
-        hole = cv2.HoughCircles(blur, cv2.HOUGH_GRADIENT, dp=1, minDist=100, param1=200, param2=20, minRadius=26, maxRadius=28)
+        hole = cv2.HoughCircles(blur, cv2.HOUGH_GRADIENT, dp=1, minDist=100, param1=200, param2=20, minRadius=0, maxRadius=0)
 
         quality_status = "PASS"
         status_color = (0, 255, 0)
