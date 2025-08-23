@@ -5,15 +5,15 @@ import numpy as np
 # Define the dictionary and the known size of your Aruco marker in cm
 aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_6X6_250)
 aruco_params = cv2.aruco.DetectorParameters()
-marker_size_cm = 5.4
+marker_size_cm = 5.37
 
 # Define the true dimensions of the object in centimeters for quality check
-true_length_cm = 15.0
-true_breadth_cm = 15.0
-true_hole_diameter_cm = 1.20
+true_length_cm = 7.96
+true_breadth_cm = 3.98
+true_hole_diameter_cm = 0.54
 
 # Define the tolerance in centimeters
-tolerance_cm = 0.5 
+tolerance_cm = 0.1
 
 # --- 2. Start Live Video Capture ---
 # Initialize video capture from the default camera (index 0)

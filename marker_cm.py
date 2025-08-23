@@ -4,10 +4,10 @@ import numpy as np
 # Define the dictionary and the known size of your Aruco marker
 aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_6X6_250)
 aruco_params = cv2.aruco.DetectorParameters()
-marker_size = 5.1 
+marker_size = 5.3
 
 # Load image
-img = cv2.imread("marked.png")
+img = cv2.imread("pic1.png")
 if img is None:
     print("Error: Image not found.")
     exit()
@@ -88,12 +88,12 @@ else:
     print("No circles found.")
 
 # Define the true dimensions of the object in centimeters
-true_length = 15.0
-true_breadth = 15.0
-true_hole_diameter = 1.20
+true_length = 7.96
+true_breadth = 3.98
+true_hole_diameter = 0.54
 
 # Define the tolerance in centimeters
-tolerance = 0.5 
+tolerance = 0.1
 
 # Initially assume the quality check passes
 quality = "PASS"
